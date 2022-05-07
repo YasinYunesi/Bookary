@@ -1,0 +1,84 @@
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Costume tailwind classes */
+@layer components {
+  /* Global */
+  .transition_150 {
+    @apply transition-all duration-150;
+  }
+  .transition_300 {
+    @apply transition-all duration-300;
+  }
+  .transition_700 {
+    @apply transition-all duration-700 ease-in-out;
+  }
+  .grid_flow_col_2 {
+    @apply grid grid-flow-col grid-cols-2;
+  }
+  .grid_flow_2 {
+    @apply grid grid-flow-row grid-rows-2 xl:grid-flow-col xl:grid-cols-2;
+  }
+
+  /* Sign in form */
+  .welcome_text {
+    @apply mt-6 text-xl xs:text-3xl 2xl:text-4xl font-bold tracking-wide text-center lg:text-left;
+  }
+  .form_input {
+    @apply bg-light_dark border border-dark_gray p-3 xl:p-4 2xl:p-5 outline-none rounded-lg w-full text-lg placeholder:text-base focus:outline-none focus:brightness-110 hover:brightness-110 transition_150 ease-linear;
+  }
+  .input_icon {
+    @apply absolute top-0 bottom-0 right-0 pr-3 text-xl text-gray-400 flex items-center z-10;
+  }
+  .input_err {
+    @apply text-red-700 mt-1 before:h-1.5 before:w-1.5 before:rounded-full before:bg-red-700 before:inline-block before:mr-1;
+  }
+  .social_btn {
+    @apply rounded-full bg-neutral-400 text-light_dark xs:text-xl 2xl:text-2xl p-2 xs:p-4 2xl:p-5 mr-5 transition_300 hover:text-white;
+  }
+
+  /* Top & Bottom nav */
+  .animated_underline {
+    @apply absolute -bottom-1 h-px bg-dark w-0 transition_700 left-0 group-hover:w-full;
+  }
+  .animated_underline_group {
+    @apply relative flex items-center text-xl transition_300;
+  }
+  .menu_item {
+    @apply mx-7 relative;
+  }
+  .dropdown_item {
+    @apply block px-2 py-1 bg-gray-200 text-sm transition_150 hover:bg-dark hover:text-white;
+  }
+  .animated_upperline {
+    @apply absolute -top-1 right-0 h-px w-0 bg-dark transition_700 group-hover:w-full;
+  }
+  .nav_social_btn {
+    @apply ml-3 text-lg transition_150;
+  }
+
+  /* The main content */
+  .side_bar_item {
+    @apply rounded-full px-5 py-3 mb-3 border border-gray-300 text-gray-600 font-bold flex items-center transition_300 hover:bg-regular_yellow hover:shadow-xl cursor-pointer;
+  }
+  .side_bar_item_active {
+    @apply bg-regular_yellow shadow-xl;
+  }
+  .side_bar_item_icon {
+    @apply mr-10 text-4xl bg-white p-2 rounded-full;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
