@@ -9,7 +9,7 @@ const HomeScreen = () => {
       <Navbar />
 
       {/* The main content */}
-      <MainContent />
+      {/* <MainContent /> */}
     </div>
   );
 };

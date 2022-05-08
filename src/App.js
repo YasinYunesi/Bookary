@@ -10,13 +10,15 @@ import NotFoundScreen from "./screens/NotFoundScreen";
 function App() {
   return (
     <StateProvider>
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomeScreen />} />
-          <Route path="/sign-up" element={<SignUpScreen />} />
-          <Route path="*" element={<NotFoundScreen />} />
-        </Routes>
-      </Router>
+      <div className="bg-smoke_white">
+        <Router>
+          <Routes>
+            <Route path="/" element={<HomeScreen />} />
+            <Route path="/sign-up" element={<SignUpScreen />} />
+            <Route path="*" element={<NotFoundScreen />} />
+          </Routes>
+        </Router>
+      </div>
     </StateProvider>
   );
 }

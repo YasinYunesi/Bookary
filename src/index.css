@@ -40,23 +40,11 @@
   }
 
   /* Top & Bottom nav */
-  .animated_underline {
-    @apply absolute -bottom-1 h-px bg-dark w-0 transition_700 left-0 group-hover:w-full;
+  .nav_dropdown {
+    @apply w-3/12 flex items-center justify-center bg-smoke_white rounded-full px-2 py-2 mr-3 text-sm font-semibold cursor-pointer text-gray-500 transition_300 hover:text-gray-600;
   }
-  .animated_underline_group {
-    @apply relative flex items-center text-xl transition_300;
-  }
-  .menu_item {
-    @apply mx-7 relative;
-  }
-  .dropdown_item {
-    @apply block px-2 py-1 bg-gray-200 text-sm transition_150 hover:bg-dark hover:text-white;
-  }
-  .animated_upperline {
-    @apply absolute -top-1 right-0 h-px w-0 bg-dark transition_700 group-hover:w-full;
-  }
-  .nav_social_btn {
-    @apply ml-3 text-lg transition_150;
+  .nav_menu li {
+    @apply cursor-pointer transition_300 hover:scale-110 hover:text-main_red;
   }
 
   /* The main content */
