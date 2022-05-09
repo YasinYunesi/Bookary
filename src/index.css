@@ -47,6 +47,23 @@
     @apply cursor-pointer transition_300 hover:scale-110 hover:text-main_red;
   }
 
+  /* Benefits list */
+  .benefit {
+    @apply flex items-center justify-center w-3/12;
+  }
+  .benefit div {
+    @apply w-5/12 h-full mr-2;
+  }
+  .benefit div h1 {
+    @apply font-bold text-xl mb-2;
+  }
+  .benefit div p {
+    @apply font-semibold text-gray-400;
+  }
+  .benefit img {
+    @apply w-3/12 p-3;
+  }
+
   /* The main content */
   .side_bar_item {
     @apply rounded-full px-5 py-3 mb-3 border border-gray-300 text-gray-600 font-bold flex items-center transition_300 hover:bg-regular_yellow hover:shadow-xl cursor-pointer;
