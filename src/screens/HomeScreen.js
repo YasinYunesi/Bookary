@@ -1,8 +1,9 @@
 // Components
 import Navbar from "../components/Navbar/Navbar";
-import MainContent from "../components/MainContent/MainContent";
+import BookList from "../components/BookList/BookList";
 import Banner from "../components/Banner/Banner";
 import Benefits from "../components/Benefits/Benefits";
+import BestBooks from "./../components/BestBooks/BestBooks";
 
 const HomeScreen = () => {
   return (
@@ -16,8 +17,11 @@ const HomeScreen = () => {
       {/* Benefits */}
       <Benefits />
 
-      {/* The main content */}
-      {/* <MainContent /> */}
+      {/* Best books */}
+      <BestBooks />
+
+      {/* The Book list */}
+      <BookList />
     </div>
   );
 };

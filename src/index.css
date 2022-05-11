@@ -64,15 +64,26 @@
     @apply w-3/12 p-3;
   }
 
+  /* Carousel */
+  .carousel_arrow {
+    @apply bg-red-400 before:bg-green-600;
+  }
+
   /* The main content */
   .side_bar_item {
-    @apply rounded-full px-5 py-3 mb-3 border border-gray-300 text-gray-600 font-bold flex items-center transition_300 hover:bg-regular_yellow hover:shadow-xl cursor-pointer;
+    @apply rounded-full px-5 py-3 mb-3 border border-gray-300 font-bold flex items-center transition_300 hover:bg-normal_purple hover:shadow-xl cursor-pointer;
+  }
+  .side_bar_item h1 {
+    @apply text-gray-600;
   }
   .side_bar_item_active {
-    @apply bg-regular_yellow shadow-xl;
+    @apply bg-normal_purple shadow-xl;
+  }
+  .side_bar_item_active h1 {
+    @apply text-white;
   }
   .side_bar_item_icon {
-    @apply mr-10 text-4xl bg-white p-2 rounded-full;
+    @apply mr-10 text-4xl text-gray-600 bg-white p-2 rounded-full;
   }
 }
 
