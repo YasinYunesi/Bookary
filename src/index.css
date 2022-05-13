@@ -108,6 +108,18 @@
   .slick-active .carousel_dot {
     @apply text-7xl text-normal_purple;
   }
+
+  /* Footer */
+  .footer_list li {
+    @apply mt-6 opacity-60 cursor-pointer transition_300 hover:opacity-90;
+  }
+  .footer_btn {
+    @apply px-10 font-semibold text-sm py-2 rounded-full transition_300 hover:brightness-75;
+  }
+}
+
+* {
+  scroll-behavior: smooth !important;
 }
 
 body {

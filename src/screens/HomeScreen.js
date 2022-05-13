@@ -6,6 +6,7 @@ import Benefits from "../components/Benefits/Benefits";
 import BestBooks from "./../components/BestBooks/BestBooks";
 import Subscribe from "../components/Subscribe/Subscribe";
 import Comments from "./../components/Comments/Comments";
+import Footer from "../components/Footer/Footer";
 
 const HomeScreen = () => {
   return (
@@ -32,6 +33,9 @@ const HomeScreen = () => {
 
       {/* Comments */}
       <Comments />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
