@@ -25,8 +25,14 @@ module.exports = {
         "3xl": "1792px",
         xs: "350px",
       },
-      brightness: {
-        25: ".25",
+      fontSize: {
+        "0.5xl": "1.4rem",
+      },
+      spacing: {
+        76: "19rem",
+      },
+      fontFamily: {
+        catamaran: ["Catamaran"],
       },
     },
   },

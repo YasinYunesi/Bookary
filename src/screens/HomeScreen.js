@@ -4,6 +4,8 @@ import BookList from "../components/BookList/BookList";
 import Banner from "../components/Banner/Banner";
 import Benefits from "../components/Benefits/Benefits";
 import BestBooks from "./../components/BestBooks/BestBooks";
+import Subscribe from "../components/Subscribe/Subscribe";
+import Comments from "./../components/Comments/Comments";
 
 const HomeScreen = () => {
   return (
@@ -22,6 +24,14 @@ const HomeScreen = () => {
 
       {/* The Book list */}
       <BookList />
+
+      {/* Subscribe */}
+      <div className="px-8">
+        <Subscribe />
+      </div>
+
+      {/* Comments */}
+      <Comments />
     </div>
   );
 };

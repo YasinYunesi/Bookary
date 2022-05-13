@@ -85,6 +85,29 @@
   .side_bar_item_icon {
     @apply mr-10 text-4xl text-gray-600 bg-white p-2 rounded-full;
   }
+
+  /* Comments */
+  .comment {
+    @apply text-center py-20 w-8/12 !important;
+  }
+  .comment h1 {
+    @apply text-0.5xl font-semibold px-76 font-catamaran;
+  }
+  .comment img {
+    @apply rounded-full mx-auto w-1/12 h-1/6 p-3 mt-8 mb-3;
+  }
+  .comment h2 {
+    @apply text-xl font-bold;
+  }
+  .comment span {
+    @apply text-gray-400;
+  }
+  .slick_arrow {
+    @apply text-lg;
+  }
+  .slick-active .carousel_dot {
+    @apply text-7xl text-normal_purple;
+  }
 }
 
 body {
