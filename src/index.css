@@ -47,7 +47,7 @@
     @apply cursor-pointer transition_300 hover:scale-110 hover:text-main_red;
   }
   .nav_btn {
-    @apply w-2/3 rounded-full py-3 ml-auto text-white flex items-center justify-center bg-normal_purple font-medium transition_300;
+    @apply w-2/3 rounded-full py-3 ml-auto text-white flex items-center justify-center bg-normal_purple font-medium transition_300 hover:brightness-75;
   }
 
   /* Benefits list */
@@ -74,7 +74,7 @@
 
   /* The main content */
   .side_bar_item {
-    @apply rounded-full px-5 py-3 mb-3 border border-gray-300 font-bold flex items-center transition_300 hover:bg-normal_purple hover:shadow-xl cursor-pointer;
+    @apply rounded-full w-full px-5 py-3 mb-3 border border-gray-300 font-bold flex items-center transition_300 hover:bg-normal_purple hover:brightness-75 hover:shadow-xl cursor-pointer;
   }
   .side_bar_item h1 {
     @apply text-gray-600;

@@ -8,14 +8,10 @@ import { useForm } from "react-hook-form";
 import FormInputs from "./FormInputes";
 // Context API
 import { AppContext } from "../../context/Context";
-import { useNavigate } from "react-router-dom";
 
 const Form = () => {
   // Context
   const { dispatchUserEvent } = useContext(AppContext);
-
-  // React router navigate
-  const navigate = useNavigate();
 
   // React-hook-form
   const {

@@ -13,12 +13,9 @@ const Content = () => {
       <div className="">
         {/* Sign up Link */}
         <div className="text-right">
-          <Link
-            to="/sign-up"
-            className="text-lg font-medium inline-block text-gray-400 transition-all duration-300 hover:text-gray-300"
-          >
+          <h1 className="text-lg cursor-pointer font-medium inline-block text-gray-400 transition-all duration-300 hover:text-gray-300">
             Log in
-          </Link>
+          </h1>
         </div>
 
         {/* Text & the form */}

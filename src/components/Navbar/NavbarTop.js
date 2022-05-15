@@ -1,22 +1,21 @@
 // React
 import { useContext } from "react";
-// React router
-import { Link } from "react-router-dom";
 // Context
 import { AppContext } from "../../context/Context";
 // UI
 import { RiSearchFill } from "react-icons/ri";
-import { AiOutlineArrowRight } from "react-icons/ai";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Logo from "../../assets/logo/logo_small.png";
 
 const NavbarTop = () => {
   // Getting user from context
-  const { user } = useContext(AppContext);
-  // Getting user from local storage
-  const userLS = localStorage.getItem("User");
-  // Extracting user's data from LS
-  const { firstName } = JSON.parse(userLS);
+  const { dispatchUserEvent } = useContext(AppContext);
+
+  // Sign out handler
+  const SignOutHandler = () => {
+    dispatchUserEvent("SIGN_OUT");
+    localStorage.removeItem("User");
+  };
 
   // JSX ////////////////////////////////
   return (
@@ -46,15 +45,9 @@ const NavbarTop = () => {
       {/* The Help & Login btn */}
       <div className="flex items-center justify-between w-1/6">
         <h1 className="w-fit text-center cursor-pointer font-semibold text-gray-500">Help</h1>
-        {userLS || user.length !== 0 ? (
-          <h1 className="nav_btn" title={`Welcome ${user.firstName || firstName}`}>
-            Welcome
-          </h1>
-        ) : (
-          <Link to="/sign-up" className="nav_btn hover:brightness-75" title="Sign up or log in">
-            Log in / Sign up <AiOutlineArrowRight className="ml-3" />
-          </Link>
-        )}
+        <button className="nav_btn" title="Sign out of your account!" onClick={SignOutHandler}>
+          Sign out
+        </button>
       </div>
     </div>
   );

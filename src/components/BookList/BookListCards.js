@@ -1,5 +1,7 @@
 // React
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+// Context
+import { AppContext } from "../../context/Context";
 // UI
 import NoCover from "../../assets/images/no_cover.png";
 import { AiFillStar } from "react-icons/ai";
@@ -7,16 +9,23 @@ import { AiFillStar } from "react-icons/ai";
 const BooksList = () => {
   const [books, setBooks] = useState([]);
 
+  // Getting items from context
+  const { query, filter, printType } = useContext(AppContext);
+
   // Fetching the data
   useEffect(() => {
     const getData = async () => {
-      const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=run`);
+      const response = await fetch(
+        `https://www.googleapis.com/books/v1/volumes?q=${query}&filter=${filter}&printType=${printType}`
+      );
       const data = await response.json();
       setBooks(data.items);
     };
 
+    console.log(`https://www.googleapis.com/books/v1/volumes?q=${query}&filter=${filter}&printType=${printType}`);
+
     getData();
-  }, []);
+  }, [query, filter, printType]);
 
   // JSX ////////////////////////////////
   return (
