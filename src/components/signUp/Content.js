@@ -8,7 +8,6 @@ import { FaTelegramPlane, FaLinkedin } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 
 const Content = () => {
-  // JSX //////////////////////////////////
   return (
     <div className="col-span-2 flex flex-col justify-around px-10 pt-12 md:px-16 3xl:px-32 3xl:pt-24">
       <div className="">

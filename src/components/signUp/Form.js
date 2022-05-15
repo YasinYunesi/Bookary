@@ -33,8 +33,8 @@ const Form = () => {
     const { firstName, email, password } = data;
     const userData = { firstName, email, password };
     dispatchUserEvent("SIGN_IN", { newUser: userData });
-    // Navigating to the HomeScreen of the main app
-    navigate("/");
+    // Saving user's login info in local storage
+    localStorage.setItem("User", JSON.stringify(data));
   };
 
   // JSX ///////////////////////////////

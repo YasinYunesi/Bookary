@@ -10,9 +10,17 @@ const Subscribe = () => {
         Fill your house with stacks of books, in all <br /> the crannies and all the nooks.
       </h1>
 
-      <form className="w-5/12 mx-auto px-10 flex justify-between rounded-full py-3 bg-white">
+      <form
+        className="w-5/12 mx-auto px-10 flex justify-between rounded-full py-3 bg-white"
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+      >
         <input className="w-full outline-none font-semibold text-gray-500" type="text" placeholder="Drop your Email" />
-        <button className="flex items-center font-semibold rounded-full px-8 py-2 bg-blue_purple transition_300 hover:brightness-75">
+        <button
+          className="flex items-center font-semibold rounded-full px-8 py-2 bg-blue_purple transition_300 hover:brightness-75"
+          type="submit"
+        >
           Subscribe <BsArrowRightShort className="ml-2" />
         </button>
       </form>
