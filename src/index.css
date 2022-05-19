@@ -43,8 +43,11 @@
   .nav_dropdown {
     @apply w-3/12 flex items-center justify-center bg-smoke_white rounded-full px-2 py-2 mr-3 text-sm font-semibold cursor-pointer text-gray-500 transition_300 hover:text-gray-600;
   }
+  .nav_menu {
+    @apply flex items-center justify-between md:justify-evenly  px-5 md:px-0;
+  }
   .nav_menu li {
-    @apply cursor-pointer transition_300 hover:scale-110 hover:text-main_red;
+    @apply cursor-pointer transition_300 hover:scale-110 hover:text-main_red mb-3 md:mb-0;
   }
   .nav_btn {
     @apply w-2/3 rounded-full py-3 ml-auto text-white flex items-center justify-center bg-normal_purple font-medium transition_300 hover:brightness-75;
@@ -52,7 +55,7 @@
 
   /* Benefits list */
   .benefit {
-    @apply flex items-center justify-center w-3/12;
+    @apply flex items-center justify-center my-4 lg:my-2 xl:my-0;
   }
   .benefit div {
     @apply w-5/12 h-full mr-2;
@@ -91,13 +94,13 @@
 
   /* Comments */
   .comment {
-    @apply text-center py-20 w-8/12 !important;
+    @apply text-center py-20 w-10/12 lg:w-8/12 !important;
   }
   .comment h1 {
-    @apply text-0.5xl font-semibold px-76 font-catamaran;
+    @apply text-lg sm:text-0.5xl font-semibold md:px-10 lg:px-14 xl:px-36 2xl:px-44 3xl:px-76 font-catamaran;
   }
   .comment img {
-    @apply rounded-full mx-auto w-1/12 h-1/6 p-3 mt-8 mb-3;
+    @apply rounded-full mx-auto w-3/12 sm:w-2/12 xl:w-1/12 p-3 mt-8 mb-3;
   }
   .comment h2 {
     @apply text-xl font-bold;
@@ -114,7 +117,7 @@
 
   /* Footer */
   .footer_list li {
-    @apply mt-5 opacity-60 cursor-pointer transition_300 hover:opacity-90;
+    @apply text-sm lg:text-base mt-5 opacity-60 cursor-pointer transition_300 hover:opacity-90;
   }
   .footer_btn {
     @apply px-10 font-semibold text-sm py-2 rounded-full transition_300 hover:brightness-75;

@@ -23,15 +23,15 @@ const BestBooks = () => {
     <div className="px-10 my-28 py-10 bg-gray-200">
       {/* The title */}
       <div className="pb-20">
-        <h1 className="text-5xl font-bold mb-8">All time best Books</h1>
+        <h1 className="text-3xl lg:text-5xl font-bold mb-8">All time best Books</h1>
         <span className="text-gray-400 font-semibold">Great collection for all.</span>
       </div>
 
       {/* The books List */}
-      <div className="px-32 flex justify-around">
+      <div className="xl:px-14 2xl:px-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {books.map(({ id, volumeInfo, saleInfo }) => {
           return (
-            <div className="w-3/12 text-center flex flex-col justify-between" key={id}>
+            <div className="text-center flex flex-col justify-between mb-10 xl:mb-0 px-5" key={id}>
               <img
                 className="mx-auto w-1/2 h-full rounded-md mb-4"
                 src={volumeInfo?.imageLinks?.thumbnail || NoCover}

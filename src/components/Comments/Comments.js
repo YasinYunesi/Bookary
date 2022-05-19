@@ -47,7 +47,7 @@ const Comments = () => {
     <div className="w-11/12 mx-auto text-center my-32 relative">
       <Slider {...settings}>
         {/* CM 1 */}
-        <div className="comment comment_width">
+        <div className="comment">
           <h1>
             “Books are the quietest and most constant of friends; they are the most accessible and widest of counselors, the most
             patient of teachers.”
@@ -58,7 +58,7 @@ const Comments = () => {
         </div>
 
         {/* CM 2 */}
-        <div className="comment comment_width">
+        <div className="comment">
           <h1>
             “Libraries will get you through times of no money better than money will get you through times of no libraries.”
           </h1>
@@ -68,7 +68,7 @@ const Comments = () => {
         </div>
 
         {/* CM 3 */}
-        <div className="comment comment_width">
+        <div className="comment">
           <h1>
             “I find television very educating. Every time somebody turns on the set, I go into the other room and read a book.”
           </h1>

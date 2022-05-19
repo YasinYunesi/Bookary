@@ -10,11 +10,11 @@ const MainContent = () => {
       {/* The navbar */}
       <BookListNav />
 
-      <div className="flex justify-between px-8 pt-5">
+      <div className="flex flex-col 2xl:flex-row justify-between px-8 pt-5">
         {/* The Sidebar */}
         <Sidebar />
 
-        <div className="w-10/12 px-12 pb-20 text-center">
+        <div className="2xl:w-10/12 2xl:px-12 pb-20 text-center">
           {/* The books list */}
           <BooksListCards />
         </div>

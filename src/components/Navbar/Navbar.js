@@ -4,7 +4,7 @@ import NavbarBottom from "./NavbarBottom";
 
 const Navbar = () => {
   return (
-    <div className="">
+    <div>
       {/* Top navbar */}
       <NavbarTop />
 

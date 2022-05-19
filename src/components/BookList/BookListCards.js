@@ -22,19 +22,17 @@ const BooksList = () => {
       setBooks(data.items);
     };
 
-    console.log(`https://www.googleapis.com/books/v1/volumes?q=${query}&filter=${filter}&printType=${printType}`);
-
     getData();
   }, [query, filter, printType]);
 
   // JSX ////////////////////////////////
   return (
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 2xl:mt-0">
       {books.map(({ id, volumeInfo, saleInfo }) => {
         return (
-          <div className="col-span-1 flex mr-5 mb-5 shadow-lg" key={id}>
+          <div className="col-span-1 grid grid-rows-2 sm:flex mr-5 mb-5 mt-5 2xl:mt-0 shadow-lg" key={id}>
             {/* Book cover */}
-            <div className="w-3/12 h-full">
+            <div className="mx-auto w-2/3 sm:w-4/12 3xl:w-3/12 h-full">
               <img
                 className="mx-auto w-full h-full rounded-md"
                 src={volumeInfo?.imageLinks?.thumbnail || NoCover}
@@ -43,7 +41,7 @@ const BooksList = () => {
             </div>
 
             {/* Book info */}
-            <div className="relative px-6 pt-3 text-left w-9/12">
+            <div className="grid grid-rows-3 relative px-6 pt-3 text-left sm:w-8/12 3xl:w-9/12">
               <div className="flex items-center justify-between mb-2">
                 {/* The title, author and stars */}
                 <div>
@@ -78,7 +76,7 @@ const BooksList = () => {
               </p>
 
               {/* The buttons */}
-              <div className="absolute bottom-0 left-0 right-0 w-full flex items-center justify-between px-6 pb-3">
+              <div className="w-full flex items-end justify-between py-3">
                 <button className="font-semibold text-gray-500 transition_300 hover:text-gray-700 hover:underline">
                   Read more
                 </button>

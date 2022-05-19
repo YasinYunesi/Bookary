@@ -59,7 +59,7 @@ const Sidebar = () => {
 
   // JSX //////////////////////////////////////
   return (
-    <div className="w-2/12">
+    <div className="2xl:w-2/12">
       <ul>
         <button
           className={`side_bar_item group ${active === "books" && "side_bar_item_active"}`}

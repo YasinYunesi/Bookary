@@ -6,7 +6,7 @@ import Holiday from "../../assets/icons/festival.svg";
 
 const Benefits = () => {
   return (
-    <ul className="flex my-10">
+    <ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 my-10">
       {/* Globe */}
       <li className="benefit">
         <div>
