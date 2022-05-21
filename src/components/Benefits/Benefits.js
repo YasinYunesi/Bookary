@@ -1,6 +1,6 @@
 // UI
 import Globe from "../../assets/icons/globe.svg";
-import Delivery from "../../assets/icons/delivery_2.svg";
+import Delivery from "../../assets/icons/delivery.svg";
 import Money from "../../assets/icons/money.svg";
 import Holiday from "../../assets/icons/festival.svg";
 

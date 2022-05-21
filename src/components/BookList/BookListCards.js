@@ -32,7 +32,7 @@ const BooksList = () => {
         return (
           <div className="col-span-1 grid grid-rows-2 sm:flex mr-5 mb-5 mt-5 2xl:mt-0 shadow-lg" key={id}>
             {/* Book cover */}
-            <div className="mx-auto w-2/3 sm:w-4/12 3xl:w-3/12 h-full">
+            <div className="mx-auto w-2/3 sm:w-4/12 3xl:w-3/12 h-full bg-low_op_black">
               <img
                 className="mx-auto w-full h-full rounded-md"
                 src={volumeInfo?.imageLinks?.thumbnail || NoCover}

@@ -33,7 +33,7 @@ const BestBooks = () => {
           return (
             <div className="text-center flex flex-col justify-between mb-10 xl:mb-0 px-5" key={id}>
               <img
-                className="mx-auto w-1/2 h-full rounded-md mb-4"
+                className="mx-auto w-1/2 h-full rounded-md mb-4 bg-low_op_black"
                 src={volumeInfo?.imageLinks?.thumbnail || NoCover}
                 alt="Cover"
               />

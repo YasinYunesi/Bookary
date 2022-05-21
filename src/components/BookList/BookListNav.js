@@ -4,7 +4,7 @@ import { useContext, useState } from "react";
 import { AppContext } from "../../context/Context";
 // UI
 import { AiOutlineSearch } from "react-icons/ai";
-import Logo from "../../assets/logo/logo_large.png";
+import Logo from "../../assets/logo/logo_small.png";
 
 const BookListNav = () => {
   const [query, setQuery] = useState("");

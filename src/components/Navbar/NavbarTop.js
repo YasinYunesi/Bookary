@@ -37,7 +37,7 @@ const NavbarTop = () => {
         <h1 className="nav_dropdown">
           All categories <MdKeyboardArrowDown />
         </h1>
-        <input className="w-8/12 py-1 border-0 focus:border-0 outline-nonee" type="text" placeholder="Search..." />
+        <input className="w-8/12 py-1 outline-none" type="text" placeholder="Search..." />
         <div className="w-1/12 text-center px-2">
           <button className="w-full rounded-full py-2 bg-main_red transition_300 hover:brightness-90 group" type="submit">
             <RiSearchFill className="mx-auto text-white text-xl transition_300 group-hover:rotate-12" />
