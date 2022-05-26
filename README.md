@@ -1,8 +1,7 @@
 # Bookary, an online book store
 
-Hey, Yasin here. Bookary is an online book store template. I've tried to pay more
-attention to the logic part of the project so the UI might not be the best that I
-coulde've done. By the way, I've used my 
+Hey, Yasin here. Bookary is an online book store template. I've tried to pay more attention to the logic part of the project so the UI might not be the best that I
+coulde've done. I've used Context API and Local storage to log the user in and save his/her info By the way, I've used my 
 [Sign up form](https://github.com/YasinYunesi/SignUp-form) project for users to sign up.
 
 
